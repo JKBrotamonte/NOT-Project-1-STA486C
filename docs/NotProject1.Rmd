@@ -27,7 +27,7 @@ To clean the left over variables I had to deal with a couple different problems.
 \newpage
 
 # Data Visualization 1   
-```{r, fig.width=14, fig.height=12}
+```{r, fig.width=14, fig.height=10}
 ggplot(NYPD_Arrest, aes(x = OFNS_DESC, fill = OFNS_DESC)) +
   geom_bar(position = position_dodge()) +
   facet_wrap(~PERP_RACE, scales = "free_y") +  # scales = "free_y" for better visualization
@@ -44,7 +44,7 @@ The visual above is a bunch of bar plots looking at the relationship between the
 \newpage
 
 # Data Visualization 2   
-```{r, fig.width=14, fig.height=12}
+```{r, fig.width=14, fig.height=10}
 ggplot(NYPD_Arrest, aes(x = ARREST_BORO, fill = ARREST_BORO)) +
   geom_bar(position = position_dodge()) +
   facet_wrap(~PERP_RACE, scales = "free_y") +  # scales = "free_y" for better visualization
